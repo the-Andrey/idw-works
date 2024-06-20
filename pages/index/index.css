@@ -185,11 +185,13 @@ nav p {
 
 .main {
 	margin: 0;
-	margin-top: 5rem;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
 	padding: 0;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	height: 75vh;
 }
 
 .upcoming-image img {
@@ -223,4 +225,55 @@ nav p {
 	font-weight: 400;
 	color: #FFFFFF;
 	font-size: 3rem;
+}
+
+/* Informations section */
+
+.informations-section {
+	width: 100%;
+	height: 100%;
+	background-color: #323630;
+	background-image: linear-gradient(to bottom, #3B6A48, #080807);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.informations {
+	width: 75%;
+	display: flex;
+}
+
+.informations img {
+	width: 10rem;
+	height: 10rem;
+}
+
+.informations-div {
+	background-color: #FFFFFF;
+	margin: 1rem;
+	max-width: fit-content;
+	box-shadow: 0.5rem 0.75rem;
+	border-radius: 0.25rem;
+}
+
+.technologies {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.tech {
+	padding: 1rem;
+}
+
+.description {
+	padding: 1rem;
+	align-items: center;
+	justify-content: center;
+	max-height: min-content;
+}
+
+.description p {
+	font-size: 2rem;
 }
