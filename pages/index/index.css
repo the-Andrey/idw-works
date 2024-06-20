@@ -1,17 +1,130 @@
 * {
-	font-family: "Inter", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 14;
-	font-style: normal;
-	font-variation-settings:
-	"slnt" 0;
+	font-family: 'Poppins', sans-serif;
 }
+
+.poppins-thin {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+  }
+  
+  .poppins-extralight {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+  }
+  
+  .poppins-light {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+  }
+  
+  .poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .poppins-medium {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  .poppins-semibold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+  }
+  
+  .poppins-bold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .poppins-extrabold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+  }
+  
+  .poppins-black {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: italic;
+  }
+  
+  .poppins-light-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+  }
+  
+  .poppins-black-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+  }
+  
 
 body {
 	margin: 0rem;
 	padding: 0rem;
 	background-color: #3B6A48;
+	background-image: 
+            radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 0.5rem 0.5rem; /* Tamanho do padrão de ruído */
+            background-position: 0 0, 0.5rem 0.5rem; /* Posição dos padrões */
+    height: 100vh;
+    width: 100%;
 }
+
+/* Navbar */
 
 nav {
 	margin: 0rem;
@@ -21,8 +134,8 @@ nav {
 nav p {
 	font-size: 1.25rem;
 	margin: 1rem;
-	margin-top: 3rem;
-	color: #FFFFFF;
+	margin-top: 1rem;
+	color: #000000;
 }
 
 .navbar {
@@ -33,7 +146,13 @@ nav p {
 	justify-content: space-between;
 	padding: 1rem 4rem 1rem 4rem;
 	align-items: center;
-	/* border-bottom: 1px solid #FFFFFF; */
+	background-color: #b6d3b5;
+	border-bottom: 0.25rem solid #000000;
+}
+
+.navbar a {
+	color: inherit;
+	text-decoration: none;
 }
 
 .nav-container {
@@ -51,7 +170,57 @@ nav p {
 	font-weight: bold;
 }
 
+.nav-container p:hover {
+	transition: 10ms;
+	color: #3B6A48;
+	cursor: pointer;
+}
+
 .nav-title {
 	font-weight: bold;
 	font-size: 2.5rem;
+}
+
+/* Main content section */
+
+.main {
+	margin: 0;
+	margin-top: 5rem;
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.upcoming-image img {
+	width: 35rem;
+	height: 35rem;
+	border-radius: 20rem;
+	margin-left: 8rem;
+	box-shadow: 0.5rem 0.75rem;
+}
+
+.main-text {
+	width: 50rem;
+	height: 50rep;
+	margin-left: 8rem;
+	font-size: 70px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-text div {
+	margin: 1rem;
+}
+
+.welcome {
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 5rem;
+}
+
+.apresentation {
+	font-weight: 400;
+	color: #FFFFFF;
+	font-size: 3rem;
 }
