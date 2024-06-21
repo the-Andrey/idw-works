@@ -2,6 +2,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .poppins-thin {
 	font-family: "Poppins", sans-serif;
 	font-weight: 100;
@@ -257,6 +261,15 @@ nav p {
 	border-radius: 0.25rem;
 }
 
+.informations-div:has(img):hover {
+	background-color: #3B6A48;
+	margin: 1rem;
+	max-width: fit-content;
+	box-shadow: 0.5rem 0.75rem;
+	border-radius: 0.25rem;
+	transition: 0.25s;
+}
+
 .technologies {
 	display: flex;
 	flex-direction: column;
@@ -272,6 +285,8 @@ nav p {
 	align-items: center;
 	justify-content: center;
 	max-height: min-content;
+	display: grid;
+	place-items: center;
 }
 
 .description p {

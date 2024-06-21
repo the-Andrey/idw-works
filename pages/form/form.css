@@ -68,7 +68,7 @@ body{
   border: 0.125rem solid;
   padding: 0.5rem;
   font-weight: bolder;
-
+  resize: none;
 }
 
 .form .green-button{

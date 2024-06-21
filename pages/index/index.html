@@ -9,13 +9,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+	
+	<script src="../../script.js">
+		onload(scrapeWebsite())
+	</script>
+
 	<header>
 		<nav class="navbar">
 			<p class="nav-title"><a href="index.html">Ryan Dahl</a></p>
 
 			<div class="nav-container">
 				<p><a href="../form/web-form.html">Contato</a></p>
-				<p><a>Quem sou eu</a></p>
+				<p><a href="#info-section">Quem sou eu</a></p>
 				<p><a href="https://github.com/ry">Github</a></p>
 			</div>
 		</nav>
@@ -38,18 +43,18 @@
 
 	</div>
 
-	<section class="informations-section">
+	<section class="informations-section" id="info-section">
 		<div class="informations">
 		
-			<div class="description informations-div">
+			<div class="description informations-div" id="info-div">
 				<p>
 					Ryan Dahl é um desenvolvedor notável conhecido por criar o Node.js, Deno.js e JSR. Node.js revolucionou o desenvolvimento backend ao permitir a execução de JavaScript no servidor de forma eficiente e não bloqueante, enquanto Deno.js trouxe melhorias em segurança e integração nativa com TypeScript. JSR exemplifica sua visão para expandir o uso de JavaScript além do web development, facilitando automações complexas. Seu legado inclui não apenas tecnologias inovadoras, mas também um impacto duradouro na comunidade de desenvolvimento global, inspirando novas abordagens e ferramentas para programadores em todo o mundo.				</p>
 			</div>
 	
 			<div class="technologies">
-				<div class="tech informations-div"><img src="../../images/nodejs.png"></div>
-				<div class="tech informations-div"><img src="../../images/deno.png"></div>
-				<div class="tech informations-div"><img src="../../images/jsr.png"></div>
+				<div class="tech informations-div"><img src="../../images/nodejs.png" onclick="changeText(0)"></div>
+				<div class="tech informations-div"><img src="../../images/deno.png" onclick="changeText(1)"></div>
+				<div class="tech informations-div"><img src="../../images/jsr.png" onclick="changeText(2)"></div>
 			</div>
 	
 		</div>
