@@ -163,14 +163,14 @@ nav p {
 	justify-content: space-between;
 }
 
-.nav-container p {
+.nav-container a {
 	text-decoration: underline;
 	text-underline-offset: 0.25rem;
 	font-size: 1.25rem;
 	font-weight: bold;
 }
 
-.nav-container p:hover {
+.nav-container a:hover {
 	transition: 10ms;
 	color: #3B6A48;
 	cursor: pointer;
