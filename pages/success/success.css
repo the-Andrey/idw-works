@@ -1,0 +1,26 @@
+.confirm-message{
+  display: flex;
+  background-color: white;
+  width: 35rem;
+  height: 20rem;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+  border-radius: 0.25rem;
+  box-shadow: 10px 15px;
+}
+
+.confirm-message .confirm-image img{
+  width: 10rem;
+  height: 10rem;
+}
+
+.confirm-message {
+  display: flex;
+  flex-direction: column;
+}
+.confirm-text{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
